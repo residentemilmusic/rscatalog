@@ -29,6 +29,9 @@ table td:first-child, table th:first-child {
 .container h1 {
 	color: #ddd;
 }
+.container > p {
+	color: #fff;
+}
 .form-control {
 	margin-bottom: 15px;
 }
