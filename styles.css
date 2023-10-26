@@ -35,6 +35,6 @@ table td:first-child, table th:first-child {
 .form-control {
 	margin-bottom: 15px;
 }
-.selected {
-	background-color: #ccffcc;
+body .container table tbody tr.selected td {
+    background: #ccffcc;
 }

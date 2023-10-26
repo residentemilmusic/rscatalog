@@ -45,11 +45,7 @@ function unsecuredCopyToClipboard(ev) {
   $(this).find('textarea').remove();
   $(this).find('td:last').html('<svg class="bi" width="32" height="32" fill="#3a3"><use xlink:href="bootstrap-icons.svg#clipboard-check-fill"/></svg>');
   var originalColor = $(this).attr('background-color');
-  $(this).animate({
-    backgroundColor: "#ccffcc"
-  }, 1000 ).animate({
-    backgroundColor: originalColor
-  }, 1000 );
+  $(this).addClass('.selected');
   var thisElem = $(this);
   setTimeout(function() {
   	thisElem.removeClass('.selected');
