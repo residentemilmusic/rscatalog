@@ -49,7 +49,7 @@ function unsecuredCopyToClipboard(ev) {
   var thisElem = $(this);
   setTimeout(function() {
   	thisElem.removeClass('selected');
-  	thisElem.find('td:last').html('<svg class="bi" width="32" height="32" fill="#000"><use xlink:href="bootstrap-icons.svg#clipboard"/></svg>');
+  	thisElem.find('td:last').html('<svg class="bi" width="32" height="32" fill="#000"><use xlink:href="bootstrap-icons.svg#copy"/></svg>');
   }, 3000)
   ev.preventDefault();
   ev.stopPropagation();
@@ -66,7 +66,7 @@ function loadCatalog() {
 			newElem.on('click', unsecuredCopyToClipboard)
 			newElem.append("<td class='artist'>" + row.colArtist + "</td>");
 			newElem.append("<td class='song'>" + row.colTitle + "</td>");
-			newElem.append('<td class="action"><svg class="bi" width="32" height="32" fill="currentColor"><use xlink:href="bootstrap-icons.svg#clipboard"/></svg></td>');
+			newElem.append('<td class="action"><svg class="bi" width="32" height="32" fill="currentColor"><use xlink:href="bootstrap-icons.svg#copy"/></svg></td>');
 			newElem.removeAttr('id');
 			newElem.insertAfter('tbody tr:last');
 		}
