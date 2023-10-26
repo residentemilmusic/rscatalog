@@ -1,38 +1,38 @@
 body {
-	background-color: #223;
+	background-color: #223 !important;
 }
 table {
-	table-layout:fixed;
-	width:100%;
+	table-layout:fixed !important;
+	width:100% !important;
 }
 td, th {
-	display:inline-block;
-	width:57%;
-	min-height: 50px;
-	display: table-cell;
+	display:inline-block !important;
+	width:57% !important;
+	min-height: 50px !important;
+	display: table-cell !important;
 }
 table td:last-child, table th:last-child {
-	width:13%;
+	width:13% !important;
 }
 table td:first-child, table th:first-child {
-	width:30%;
+	width:30% !important;
 }
 
 .logo {
-	margin: 0 auto;
-	text-align: center;
+	margin: 0 auto !important;
+	text-align: center !important;
 }
 .logo img {
-	width: 50%;
+	width: 50% !important;
 }
-.container { margin: 15px auto; }
+.container { margin: 15px auto !important; }
 .container h1 {
-	color: #ddd;
+	color: #ddd !important;
 }
 .container > p {
-	color: #fff;
+	color: #fff !important;
 }
 .form-control {
-	margin-bottom: 15px;
+	margin-bottom: 15px !important;
 }
 
