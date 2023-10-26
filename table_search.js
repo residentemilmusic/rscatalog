@@ -65,7 +65,6 @@ function loadCatalog() {
 			newElem.on('click', unsecuredCopyToClipboard)
 			newElem.append("<td class='artist'>" + row.colArtist + "</td>");
 			newElem.append("<td class='song'>" + row.colTitle + "</td>");
-			newElem.append("<td>" + row.colArrangements + "</td>");
 			newElem.append('<td class="action"><svg class="bi" width="32" height="32" fill="currentColor"><use xlink:href="bootstrap-icons.svg#clipboard"/></svg></td>');
 			newElem.removeAttr('id');
 			newElem.insertAfter('tbody tr:last');

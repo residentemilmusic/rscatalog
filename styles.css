@@ -7,18 +7,15 @@ table {
 }
 td, th {
 	display:inline-block;
-	width:45%;
+	width:57%;
 	min-height: 50px;
 	display: table-cell;
 }
 table td:last-child, table th:last-child {
-	width:10%;
+	width:13%;
 }
 table td:first-child, table th:first-child {
-	width:25%;
-}
-table td:nth-child(3), table th:nth-child(3) {
-	width:20%;
+	width:30%;
 }
 
 .logo {
