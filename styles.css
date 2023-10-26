@@ -36,32 +36,3 @@ table td:first-child, table th:first-child {
 	margin-bottom: 15px;
 }
 
-.flash {
-  -webkit-animation: flash 1s infinite; /* Safari 4+ */
-  -moz-animation:    flash 1s infinite; /* Fx 5+ */
-  -o-animation:      flash 1s infinite; /* Opera 12+ */
-  animation:         flash 1s infinite; /* IE 10+ */
-}
-
-@-webkit-keyframes flash {
-  from { background-color: #cfc; }
-  to { background-color: inherit; }
-}
-@-moz-keyframes flash {
-  from { background-color: #cfc; }
-  to { background-color: inherit; }
-}
-@-o-keyframes flash {
-  from { background-color: #cfc; }
-  to { background-color: inherit; }
-}
-@keyframes flash {
-  from { background-color: #cfc; }
-  to { background-color: inherit; }
-}
-
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}

@@ -38,17 +38,15 @@ function unsecuredCopyToClipboard(ev) {
   textArea.select();
   textArea.setSelectionRange(0,9999);
   try {
-    //document.execCommand('copy');
     navigator.clipboard.writeText(text);
   } catch (err) {
     console.error('Unable to copy to clipboard', err);
   }
   $(this).find('textarea').remove();
   $(this).find('td:last').html('<svg class="bi" width="32" height="32" fill="#3a3"><use xlink:href="bootstrap-icons.svg#clipboard-check-fill"/></svg>');
-  $(this).addClass('flash');
+  $(this).animation({ animation: 'tada' });
   var thisElem = $(this);
   setTimeout(function() {
-  	thisElem.removeClass('flash');
   	thisElem.find('td:last').html('<svg class="bi" width="32" height="32" fill="#000"><use xlink:href="bootstrap-icons.svg#clipboard"/></svg>');
   }, 3000)
   ev.preventDefault();
