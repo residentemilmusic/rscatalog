@@ -73,3 +73,18 @@ function loadCatalog() {
 		$('#loading').hide();
 	});
 }
+
+function delay(callback, ms) {
+  var timer = 0;
+  return function() {
+    var context = this, args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      callback.apply(context, args);
+    }, ms || 0);
+  };
+}
+
+$('#input').keyup(delay(function () {
+    table_search($('#input').val().toLowerCase(),$('#table tbody tr'),'012');
+}, 500));
