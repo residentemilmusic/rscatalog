@@ -32,40 +32,31 @@ table td:first-child, table th:first-child {
 .form-control {
 	margin-bottom: 15px;
 }
+
 .flash {
-  -moz-animation: flash 1s ease-out;
-  -moz-animation-iteration-count: 1;
-
-  -webkit-animation: flash 1s ease-out;
-  -webkit-animation-iteration-count: 1;
-
-  -ms-animation: flash 1s ease-out;
-  -ms-animation-iteration-count: 1;
-}
-
-@keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #ccffcc; }
-    100% { background-color: transparent; }
+  -webkit-animation: flash 1s infinite; /* Safari 4+ */
+  -moz-animation:    flash 1s infinite; /* Fx 5+ */
+  -o-animation:      flash 1s infinite; /* Opera 12+ */
+  animation:         flash 1s infinite; /* IE 10+ */
 }
 
 @-webkit-keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #ccffcc; }
-    100% { background-color: transparent; }
+  from { background-color: #cfc; }
+  to { background-color: inherit; }
 }
-
 @-moz-keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #ccffcc; }
-    100% { background-color: transparent; }
+  from { background-color: #cfc; }
+  to { background-color: inherit; }
+}
+@-o-keyframes flash {
+  from { background-color: #cfc; }
+  to { background-color: inherit; }
+}
+@keyframes flash {
+  from { background-color: #cfc; }
+  to { background-color: inherit; }
 }
 
-@-ms-keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #ccffcc; }
-    100% { background-color: transparent; }
-}
 
 @keyframes fadeIn {
   0% { opacity: 0; }

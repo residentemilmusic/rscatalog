@@ -49,6 +49,7 @@ function unsecuredCopyToClipboard(ev) {
   var thisElem = $(this);
   setTimeout(function() {
   	thisElem.removeClass('flash');
+  	thisElem.find('td:last').html('<svg class="bi" width="32" height="32" fill="#000"><use xlink:href="bootstrap-icons.svg#clipboard"/></svg>');
   }, 3000)
   ev.preventDefault();
   ev.stopPropagation();
