@@ -44,10 +44,10 @@ function unsecuredCopyToClipboard(ev) {
   }
   $(this).find('textarea').remove();
   $(this).find('td:last').html('<svg class="bi" width="32" height="32" fill="#3a3"><use xlink:href="bootstrap-icons.svg#clipboard-check-fill"/></svg>');
-  $(this).addClass('.animated');
-  $(this).addClass('.tada');
+  $(this).addClass('.selected');
   var thisElem = $(this);
   setTimeout(function() {
+  	thisElem.removeClass('.selected');
   	thisElem.find('td:last').html('<svg class="bi" width="32" height="32" fill="#000"><use xlink:href="bootstrap-icons.svg#clipboard"/></svg>');
   }, 3000)
   ev.preventDefault();
