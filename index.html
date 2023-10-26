@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="logo">
@@ -30,13 +30,13 @@
         </thead>
         <tbody>
         	<tr id="loading">
+				<td>&nbsp;</td>
 				<td>
 					Loading 
 					<div class="spinner-border" role="status">
 						<span class="sr-only"></span>
 					</div>
 				</td>
-				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 			</tr>
@@ -54,84 +54,5 @@ $('#input').keyup(function () {
 
 
 </script>
-
-<style>
-body {
-	background-color: #223;
-}
-table {
-	table-layout:fixed;
-	width:100%;
-}
-td, th {
-	display:inline-block;
-	width:45%;
-	min-height: 50px;
-	display: table-cell;
-}
-table td:last-child, table th:last-child {
-	width:10%;
-}
-table td:first-child, table th:first-child {
-	width:25%;
-}
-table td:nth-child(3), table th:nth-child(3) {
-	width:20%;
-}
-
-.logo {
-	margin: 0 auto;
-}
-.logo img {
-	max-width:100%;
-}
-.container { margin: 15px auto; }
-.container h1 {
-	color: #ddd;
-}
-.form-control {
-	margin-bottom: 15px;
-}
-.flash {
-  -moz-animation: flash 1s ease-out;
-  -moz-animation-iteration-count: 1;
-
-  -webkit-animation: flash 1s ease-out;
-  -webkit-animation-iteration-count: 1;
-
-  -ms-animation: flash 1s ease-out;
-  -ms-animation-iteration-count: 1;
-}
-
-@keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #ccffcc; }
-    100% { background-color: transparent; }
-}
-
-@-webkit-keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #ccffcc; }
-    100% { background-color: transparent; }
-}
-
-@-moz-keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #ccffcc; }
-    100% { background-color: transparent; }
-}
-
-@-ms-keyframes flash {
-    0% { background-color: transparent; }
-    50% { background-color: #ccffcc; }
-    100% { background-color: transparent; }
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-</style>
 
 </html>
