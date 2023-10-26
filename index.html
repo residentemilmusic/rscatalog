@@ -10,14 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-    <style>
-      body { background-color: #fafafa; }
-      .container { margin: 150px auto; }
-    </style>
 
 </head>
 <body>
-
+<div class="logo">
+	<img src="bassment.png">
+</div>
 <div class="container">
   <h1>The Bassment Rocksmith Catalog</h1>
     <input type="text" id="input" placeholder="Click here to Search" class="form-control">
@@ -61,6 +59,10 @@ $('#input').keyup(function () {
 body {
 	background-color: #223;
 }
+.logo {
+	margin: 30px auto;
+}
+.container { margin: 15px auto; }
 .container h1 {
 	color: #ddd;
 }
